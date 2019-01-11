@@ -24,3 +24,6 @@ dpkg -i mysql-apt-config_*.deb
 apt update
 apt install mysql-community-server -y (peale seda tuli ette installeerimismenüü, kus valisin versiooni 5.6)
 
+
+Selleks, et testida, kas PHP töötab, muutsin index.html > index.php failiks ja sisestasin rea:
+<?php echo '<p>PHP is werking</p>'; ?>
