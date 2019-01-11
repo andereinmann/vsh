@@ -14,3 +14,13 @@ apt install php7.1-cli php7.1-common php7.1-curl php7.1-gd php7.1-json php7.1-mb
 
 apt install php5.6
 apt install php5.6-cli php5.6-common php5.6-curl php5.6-gd php5.6-json php5.6-mbstring php5.6-mysql php5.6-xml
+
+
+
+Kasutasin MySQL (5.6) installeerimiseks järgmiseid käske:
+cd /tmp
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.3-1_all.deb
+dpkg -i mysql-apt-config_*.deb
+apt update
+apt install mysql-community-server -y (peale seda tuli ette installeerimismenüü, kus valisin versiooni 5.6)
+
