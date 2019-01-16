@@ -20,13 +20,13 @@ service mysql restart
 ```
 
 3. Installeerisin Wordpress'i:
-
+```
 cd /tmp
 
 wget -c http://wordpress.org/latest.zip
 
 unzip -q latest.zip -d /var/www/html/
-
+```
 
 4. Sätestasin Wordpress'i kataloogidele õiguseid ning lisasin vajalikud juurde: 
 
