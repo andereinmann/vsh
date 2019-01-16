@@ -1,19 +1,23 @@
 #
-**Wordpress'i installeerimine**
+**WORDPRESS'i INSTALLEERIMINE**
 
-**VEEBISERVERIS:**
+**Veebiserveris:**
 
 1. Installeerisin paketid: 
 ```
 apt-get install apache2 mysql-client mysql-server php5 php5-mysql php5-curl php5-gd
 ```
-(vahepeal tuli sisestada MySQL "root" kasutaja parool.)
+Vahepeal tuli sisestada MySQL "root" kasutaja parool.
 
 
-2. Taaskäivitasin Apache2: service apache2 restart
-
-Taaskäivitasin MySQL'i: service mysql restart
-
+2. Taaskäivitasin Apache2: 
+```
+service apache2 restart
+```
+Taaskäivitasin MySQL'i: 
+```
+service mysql restart
+```
 
 3. Installeerisin Wordpress'i:
 
