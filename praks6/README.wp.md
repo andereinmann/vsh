@@ -1,5 +1,5 @@
 #
-**WORDPRESS'i INSTALLEERIMINE**
+**WORDPRESSI INSTALLEERIMINE**
 
 **Veebiserveris:**
 
@@ -29,7 +29,7 @@ unzip -q latest.zip -d /var/www/html/
 ```
 
 4. Sätestasin Wordpress'i kataloogidele õiguseid ning lisasin vajalikud juurde: 
-
+```
 chown -R www-data.www-data /var/www/html/wordpress
 
 chmod -R 755 /var/www/html/wordpress
@@ -37,6 +37,5 @@ chmod -R 755 /var/www/html/wordpress
 mkdir -p /var/www/html/wordpress/wp-content/uploads
 
 chown -R www-data.www-data /var/www/html/wordpress/wp-content/uploads
+```
 
-
-5.
