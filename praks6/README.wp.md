@@ -39,3 +39,13 @@ mkdir -p /var/www/html/wordpress/wp-content/uploads
 chown -R www-data.www-data /var/www/html/wordpress/wp-content/uploads
 ```
 
+**DB serveris:**
+
+1. Installeerisin MariaDB:
+```
+apt install mariadb-server
+```
+2. Jooksutasin skripti, millega sain seadistada "root" kasutaja salasõna ning eemaldasin ebavajalikud teenused.
+```
+mysql_secure_installation
+```
