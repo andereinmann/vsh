@@ -1,6 +1,8 @@
 #
 **WORDPRESSI INSTALLEERIMINE & DATABAASI JOOKSUTAMINE TEISEST VIRTUAALMASINAST**
 
+
+
 **Veebiserveris:**
 
 1. Installeerisin paketid: 
@@ -39,6 +41,8 @@ mkdir -p /var/www/html/wordpress/wp-content/uploads
 chown -R www-data.www-data /var/www/html/wordpress/wp-content/uploads
 ```
 
+
+
 **DB serveris:**
 
 1. Installeerisin MariaDB:
@@ -69,6 +73,8 @@ GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'10.0.2.4';
 FLUSH PRIVILEGES;
 exit
 ```
+
+
 
 **Jälle veebiserveris:**
 
