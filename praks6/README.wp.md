@@ -1,5 +1,5 @@
 #
-**WORDPRESSI INSTALLEERIMINE**
+**WORDPRESSI INSTALLEERIMINE & DATABAASI JOOKSUTAMINE TEISEST VIRTUAALMASINAST**
 
 **Veebiserveris:**
 
@@ -45,7 +45,44 @@ chown -R www-data.www-data /var/www/html/wordpress/wp-content/uploads
 ```
 apt install mariadb-server
 ```
-2. Jooksutasin skripti, millega sain seadistada "root" kasutaja salasõna ning eemaldasin ebavajalikud teenused.
+2. Jooksutasin skripti, millega sain seadistada "root" kasutaja salasõna ning eemaldasin ebavajalikud teenused:
 ```
 mysql_secure_installation
+```
+3. Lisasin veebiserveri IP lubatud remote ühenduste juurde (faili asukoht on minu virtuaalmasinas on "/etc/mysql/mysql.conf.d/mysqld.cnf"):
+```
+bind-address    = 10.0.2.4
+```
+
+**Jälle veebiserveris:**
+
+1. Installeerisin MariaDB-client ja PHP-mysql paketid:
+```
+apt update
+apt install mariadb-client php-mysql
+```
+2. Testisin remote loginit uue remote kasutajaga:
+```
+mysql -u wpuser -h 10.0.2.4 -p
+status;
+exit
+```
+3. Konfigureerisin Wordpress'i Databaasiga ühendamiseks:
+```
+cd /var/www/html/wordpress/
+cp wp-config-sample.php wp-config.php
+```
+4. "wp-config.php" faili sisu:
+```
+/** The name of the database for WordPress */
+define('DB_NAME', 'wordpress');
+
+/** MySQL database username */
+define('DB_USER', 'wpuser');
+
+/** MySQL database password */
+define('DB_PASSWORD', 'qwerty');
+
+/** MySQL hostname */
+define('DB_HOST', '10.0.2.5');
 ```
