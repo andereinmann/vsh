@@ -4,9 +4,9 @@
 **VEEBISERVERIS:**
 
 1. Installeerisin paketid: 
-'''
+```
 apt-get install apache2 mysql-client mysql-server php5 php5-mysql php5-curl php5-gd
-'''
+```
 (vahepeal tuli sisestada MySQL "root" kasutaja parool.)
 
 
