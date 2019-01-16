@@ -64,7 +64,7 @@ sudo mysql -u root -p
 CREATE DATABASE wordpress;
 CREATE USER 'wpuser'@'localhost' IDENTIFIED BY 'qwerty';
 GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'localhost';
-CREATE USER 'wpuser'@'192.0.2.255' IDENTIFIED BY 'qwerty';
+CREATE USER 'wpuser'@'10.0.2.4' IDENTIFIED BY 'qwerty';
 GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'10.0.2.4';
 FLUSH PRIVILEGES;
 exit
