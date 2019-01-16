@@ -1,1 +1,3 @@
-#Wordpress'i installeerimine
+#
+Wordpress'i installeerimine
+#
