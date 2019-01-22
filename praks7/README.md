@@ -38,4 +38,10 @@ EOF
   sudo systemctl restart apache2
 ```
 
+5. Sisenesin Wiki lehele (vajalik oli ette sisestada "HTTPS://": 
+```
+https://<ip>/dokuwiki
+```
+
+
 
